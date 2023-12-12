@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Inri">
+    <title>@Inrimelsdy_-71231059- about me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+     Welcome To My Personal Web Page
+     
+    </header>
+    About me
+    <section id="foto">
+            <img src="Gambar WhatsApp 2023-12-12 pukul 15.51.13_10544c5c.jpg" alt="Inri" width="270">
+
+    </section>
+    <section id="about me">
+        <h1>Inri Graciadei Magistra Melsdy</h1>
+        <h1>@Inrimelsdy_</h1>
+        <h1>Manokwari, Papua Barat</h1>
+        <h1>Duta Wacana Christian University </h1>
+    </section>
+    <section id="keterampilan">
+        <ol>
+            <li>css</li>
+            <li>javascript</li>
+            <li>C</li>
+            <li>Python</li>
+        </ol>
+    </section>
+    
+    <button id="tombolGantiWarna">tombol ganti warna</button>
+
+    <footer>
+    
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'blue','green', 'white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById("tombolGantiWarna");
+        tombolGantiWarna.addEventListener("click",gantiWarnaRandom);
+    </script>
+</body>
+</html>
